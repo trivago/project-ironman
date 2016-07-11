@@ -1,0 +1,112 @@
+/* # Viewport */
+
+@-ms-viewport{
+    width: device-width;
+
+}
+
+@viewport {
+    width: device-width;
+}
+
+/* # Header theme trivago */
+html,
+body {
+    min-width: $min-phone-width;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: $text;
+}
+
+html {
+	font-family: $font-family;
+	font-size: 100%;
+	line-height: $line-height-base;
+}
+
+/*
+ * apply a natural box layout model to all elements, but allowing components to change
+ * see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+
+html {
+    /* vendor prefix for old androids */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Overwrite normalize.scss and user agent styles
+ */
+figure,
+blockquote {
+    margin: 0 0 $gutter;
+}
+
+dl,
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:focus,
+a:active {
+    outline: none;
+}
+
+/*
+ # Images
+ */
+@include ignore-legacy-ie {
+    img {
+        max-width: 100%;
+    }
+}
+
+/* ## figures */
+figcaption {
+    padding: 0 $gutter;
+    @include rem(font-size, 12px);
+}

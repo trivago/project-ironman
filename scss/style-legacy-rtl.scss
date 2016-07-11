@@ -1,0 +1,10 @@
+/*
+ * here will the sass config/imports go
+ */
+
+// legacy setup
+$fix-mqs: true;
+$legacy-ie: true;
+
+@import 'settings/rtl';
+@import 'base';

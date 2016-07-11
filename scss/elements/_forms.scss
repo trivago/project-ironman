@@ -1,0 +1,32 @@
+/*
+ # Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0 0 $gutter-half;
+    padding: 0;
+    // Chrome and Firefox set a `min-width: min-content;` on fieldsets
+    min-width: 0;
+}
+
+/* # Formelements */
+input,
+select,
+textarea {
+    display: block;
+    background: transparent; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+
+    // Disabled and read-only inputs
+    &[disabled],
+    &[readonly],
+    fieldset[disabled] & {
+        cursor: not-allowed;
+        opacity: 1; // iOS fix for unreadable disabled content
+    }
+
+    &:focus {
+        outline: none; // browser reset
+        border-color: darken($border-color, 10%);
+    }
+}

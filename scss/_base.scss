@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/*
+ * here will the sass config/imports go
+ *
+ * ITCSS
+ * 1. Settings
+ * 2. Tools
+ * 3. Generic
+ * 4. Elements
+ * 5. Objects
+ * 6. Components
+ * 7. Trumps
+ * 8. Shame
+ */
+
+// 1. Settings
+@import 'settings/globals';
+@import 'settings/custom';
+@import 'settings/images';
+@import 'settings/colors';
+
+// 2. Tools
+@import 'tools/mixins';
+
+// 3. Generic
+@import 'generic/normalize';
+@import 'generic/clearfix';
+
+// 4. Elements
+@import 'elements/base';
+@import 'elements/forms';
+
+// 5. Objects
+@import 'objects/grid-responsive';
+@import 'objects/centerwrapper';
+@import 'objects/oocss';
+@import 'objects/forms';
+@import 'objects/images';
+
+// 6. Components
+@import 'components/trvsnippet';
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/footer';
+
+// 7. Trumps
+@import 'trumps/responsive-utilities';
+
+// 8. Shame
+@import 'shame';
+
+
+
+

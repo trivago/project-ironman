@@ -1,0 +1,15 @@
+/* text direction declaration */
+
+/*
+ * variables for for text-direction usage
+ * leading is the value before an element, e.g. in
+ * left-to-right a margin-left
+ */
+
+/* ==========================================================================
+   text / layout direction variables
+   ========================================================================== */
+
+$leading: left;
+$trailing: right;
+$dir: ltr;

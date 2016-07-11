@@ -1,0 +1,59 @@
+/*
+### Global variables
+ */
+
+// fix mqs for IE
+$fix-mqs: false !default;
+// is legacy IE8?
+$legacy-ie: false !default;
+
+// We use this to control font-smoothing
+$font-smoothing: antialiased !default;
+
+/*
+### Basic text styles
+*/
+$font-size-base: 100% !default;
+$line-height-base: 1.25 !default;
+
+/*
+### font
+*/
+$font-family: Arial,Helvetica,Sans,Sans-Serif,"Sans Serif" !default;
+
+/*
+### Basic text styles
+*/
+$text: #333 !default;
+$text-light: #c9c7c7 !default;
+$text-medium: #757575 !default;
+$white: #fff !default;
+
+/*
+### heading presets
+*/
+$font-size-h1: 2.625rem !default; // 42px
+$font-size-h2: 2.25rem !default; // 36px
+$font-size-h3: 1.875rem !default; // 30px
+$font-size-h4: 1.5rem !default; // 24px
+$font-size-h5: 1.25rem !default; // 20px
+$font-size-h6: 1rem !default; // 16px
+
+/*
+### basic spacing
+*/
+$gutter: 16px !default;
+$gutter-half: ($gutter / 2) !default; // 8px
+$gutter-third: ($gutter / 3) !default; // 5,33px
+$gutter-quarter: ($gutter / 4) !default; // 4px
+$gutter-sixth: ($gutter / 6) !default; // 3px
+$gutter-eighth: ($gutter / 8) !default; // 2px
+$gutter-three-quaters: ($gutter * .75); // 12px
+$gutter-one-plus-half: ($gutter * 1.5); // 24px
+$gutter-doubled: ($gutter * 2) !default; // 32px
+
+/*
+### border
+*/
+$border-color: #e2e2e2 !default;
+$border-radius: 3px !default;

@@ -1,0 +1,11 @@
+/**
+ * @description
+ * Outputs content for legacy IE only
+ */
+
+@mixin legacy-ie {
+    // Only use this content if we're dealing with old IE
+    @if $legacy-ie {
+        @content;
+    }
+}

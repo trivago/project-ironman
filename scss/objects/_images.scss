@@ -1,0 +1,33 @@
+/*
+ # Images
+ */
+
+/* image helpers */
+.img-fluid {
+    max-width: 100%;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.img-rounded {
+    border-radius: $border-radius;
+}
+
+/* ## Images inside copytext */
+.copytext-image {
+    display: block;
+    margin: 0 auto $gutter;
+}
+
+/* trv logo */
+.white-logo {
+    height: 48px;
+    width: 160px;
+    display: block;
+
+    &--cn {
+        height: 76px;
+    }
+}

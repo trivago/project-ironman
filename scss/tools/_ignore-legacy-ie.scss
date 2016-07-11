@@ -1,0 +1,10 @@
+/**
+ * @description
+ * Outputs content for non legacy IE gt 8.
+ */
+
+@mixin ignore-legacy-ie {
+    @if not($legacy-ie) {
+        @content;
+    }
+}
